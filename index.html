@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- SEO: Title & Description -->
+  <title>Impressão 3D em Caruaru PE | Ferreira 3D Studio — Modelagem e Prototipagem</title>
+  <meta name="description" content="Especialistas em impressão 3D em Caruaru-PE. Modelagem 3D, prototipagem, miniaturas e reposição de peças. Atendemos Caruaru, Recife, Agreste PE e todo o Brasil. Orçamento pelo WhatsApp!">
+  <link rel="canonical" href="https://ferreira3dstudio.com.br/">
+
+  <!-- SEO: Geo Tags -->
+  <meta name="geo.region" content="BR-PE">
+  <meta name="geo.placename" content="Caruaru, Pernambuco, Brasil">
+  <meta name="geo.position" content="-8.2841;-35.9750">
+  <meta name="ICBM" content="-8.2841, -35.9750">
+  <meta name="language" content="pt-BR">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Ferreira 3D Studio">
+
+  <!-- SEO: Open Graph (WhatsApp, Facebook, Instagram) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ferreira3dstudio.com.br/">
+  <meta property="og:title" content="Impressão 3D em Caruaru PE | Ferreira 3D Studio">
+  <meta property="og:description" content="Especialistas em impressão 3D em Caruaru-PE. Modelagem, prototipagem, miniaturas. Orçamento rápido pelo WhatsApp!">
+  <meta property="og:image" content="https://ferreira3dstudio.com.br/assets/hero_bg.png">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Ferreira 3D Studio">
+
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Impressão 3D em Caruaru PE | Ferreira 3D Studio">
+  <meta name="twitter:description" content="Especialistas em impressão 3D em Caruaru-PE. Modelagem, prototipagem, miniaturas. Orçamento rápido pelo WhatsApp!">
+  <meta name="twitter:image" content="https://ferreira3dstudio.com.br/assets/hero_bg.png">
+  
+  <link rel="stylesheet" href="/css/variables.css?v=2">
+  <link rel="stylesheet" href="/css/reset.css?v=2">
+  <link rel="stylesheet" href="/css/global.css?v=2">
+  <link rel="stylesheet" href="/css/layout.css?v=2">
+  <link rel="stylesheet" href="/css/components.css?v=2">
+
+  <style>
+    .service-section { padding: var(--space-xl) 0; border-bottom: 1px solid var(--color-border); }
+    .service-section:last-child { border-bottom: none; }
+    .service-content { display: flex; flex-direction: column; justify-content: center; }
+    
+    .filter-btn {
+      background: transparent; border: 1px solid var(--color-border); color: var(--color-text);
+      padding: 0.5rem 1.5rem; border-radius: 50px; margin: 0.25rem; transition: all var(--transition-fast);
+    }
+    .filter-btn.active, .filter-btn:hover { background: var(--color-primary); border-color: var(--color-primary); color: #fff; }
+    
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; margin-top: 2rem; }
+    .gallery-item { position: relative; border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 1 / 1; background-color: var(--color-surface); cursor: pointer; display: block; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-normal); }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .gallery-caption { position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 2rem 1rem 1rem; color: #fff; opacity: 0; transition: opacity var(--transition-fast); }
+    .gallery-item:hover .gallery-caption { opacity: 1; }
+  </style>
+
+  <script src="/js/components/Header.js?v=2" defer></script>
+  <script src="/js/components/Footer.js?v=2" defer></script>
+  <script src="/js/components/FloatingWhatsApp.js?v=2" defer></script>
+  <script src="/js/main.js?v=2" defer></script>
+
+  <!-- SEO: Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://ferreira3dstudio.com.br/#business",
+    "name": "Ferreira 3D Studio",
+    "description": "Especialistas em impressão 3D, modelagem 3D sob encomenda, prototipagem, miniaturas e reposição de peças em Caruaru-PE. Atendemos empresas e pessoas físicas com entrega para todo o Brasil.",
+    "url": "https://ferreira3dstudio.com.br",
+    "telephone": "+55-81-99232-1938",
+    "email": "ferreirastudio3d@gmail.com",
+    "image": "https://ferreira3dstudio.com.br/assets/hero_bg.png",
+    "priceRange": "$$",
+    "currenciesAccepted": "BRL",
+    "paymentAccepted": "PIX, Transferência Bancária, Dinheiro",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Santa Luzia, 307, AP 301",
+      "addressLocality": "Caruaru",
+      "addressRegion": "PE",
+      "postalCode": "55000-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-8.2841",
+      "longitude": "-35.9750"
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Caruaru"},
+      {"@type": "City", "name": "Bezerros"},
+      {"@type": "City", "name": "Gravatá"},
+      {"@type": "City", "name": "Santa Cruz do Capibaribe"},
+      {"@type": "City", "name": "Surubim"},
+      {"@type": "City", "name": "Belo Jardim"},
+      {"@type": "City", "name": "Toritama"},
+      {"@type": "City", "name": "Pesqueira"},
+      {"@type": "City", "name": "Brejo da Madre de Deus"},
+      {"@type": "City", "name": "Cachoeirinha"},
+      {"@type": "City", "name": "Agrestina"},
+      {"@type": "City", "name": "Cupira"},
+      {"@type": "City", "name": "Altinho"},
+      {"@type": "City", "name": "Riacho das Almas"},
+      {"@type": "City", "name": "Sanharó"},
+      {"@type": "City", "name": "São Bento do Una"},
+      {"@type": "City", "name": "Caetés"},
+      {"@type": "City", "name": "Recife"},
+      {"@type": "City", "name": "Olinda"},
+      {"@type": "City", "name": "Jaboatão dos Guararapes"},
+      {"@type": "City", "name": "Petrolina"},
+      {"@type": "City", "name": "Paulista"},
+      {"@type": "City", "name": "Camaragibe"},
+      {"@type": "AdministrativeArea", "name": "Agreste Pernambucano"},
+      {"@type": "State", "name": "Pernambuco"},
+      {"@type": "Country", "name": "Brasil"}
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Serviços de Impressão 3D",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Modelagem 3D Sob Encomenda", "description": "Criação de modelos 3D digitais a partir de ideias, esboços ou peças originais.", "url": "https://ferreira3dstudio.com.br/#servico-modelagem"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Impressão 3D de Arquivo", "description": "Impressão de arquivos STL/OBJ em PLA, PETG, ABS e Resina com alta precisão.", "url": "https://ferreira3dstudio.com.br/#servico-impressao"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Protótipos e Peças Funcionais", "description": "Prototipagem rápida para validação de produtos e peças técnicas de reposição.", "url": "https://ferreira3dstudio.com.br/#servico-prototipos"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Miniaturas e Colecionáveis", "description": "Miniaturas de RPG, colecionáveis, action figures e peças decorativas em resina.", "url": "https://ferreira3dstudio.com.br/#servico-miniaturas"}}
+      ]
+    },
+    "sameAs": [
+      "https://wa.me/5581992321938",
+      "https://www.instagram.com/ferreira3dstudio"
+    ]
+  }
+  </script>
+
+  <!-- SEO: Schema.org FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Fazem impressão 3D em Caruaru?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Sim! A Ferreira 3D Studio é especializada em impressão 3D em Caruaru-PE. Atendemos clientes de Caruaru, Bezerros, Gravatá, Santa Cruz do Capibaribe, Recife e de todo o Agreste Pernambucano."}
+      },
+      {
+        "@type": "Question",
+        "name": "Vocês atendem outras cidades de Pernambuco além de Caruaru?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Sim! Atendemos clientes de todo o Agreste Pernambucano, incluindo Bezerros, Gravatá, Belo Jardim, Toritama, Santa Cruz do Capibaribe, Surubim, Pesqueira, e também Recife e região metropolitana. Fazemos envio para todo o Brasil."}
+      },
+      {
+        "@type": "Question",
+        "name": "Como funciona o processo de orçamento?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Nosso orçamento é feito pelo WhatsApp de forma rápida e personalizada. Basta enviar a ideia, foto ou arquivo 3D que analisamos o material, tempo de impressão e passamos o valor e prazo em seguida."}
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso ter o arquivo 3D pronto?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Não! Oferecemos o serviço de Modelagem 3D. Você pode trazer apenas a ideia, fotos ou a peça original e nossa equipe cria o arquivo digital pronto para impressão."}
+      },
+      {
+        "@type": "Question",
+        "name": "Qual o prazo médio de entrega?",
+        "acceptedAnswer": {"@type": "Answer", "text": "O prazo varia de acordo com o tamanho e complexidade da peça. Peças simples ficam prontas em 2 a 3 dias úteis. Projetos com acabamento em pintura podem levar de 7 a 15 dias úteis."}
+      },
+      {
+        "@type": "Question",
+        "name": "Fazem entrega para todo o Brasil?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Sim! Enviamos para todo o território nacional via Correios ou transportadora. Atendemos clientes em Caruaru, Pernambuco e em qualquer estado do Brasil."}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <app-header></app-header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section" id="home" style="padding: 160px 0 120px; position: relative; text-align: center; overflow: hidden;">
+      <!-- Background Image -->
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; background-image: url('/assets/hero_bg.png'); background-size: cover; background-position: center; opacity: 0.85;"></div>
+      <!-- Gradient Overlay: apenas fade embaixo pra transição suave, sem fumaça escura -->
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: linear-gradient(180deg, rgba(10,10,12,0.1) 0%, rgba(10,10,12,0.3) 60%, var(--color-bg) 100%);"></div>
+      
+      <div class="container" style="position: relative; z-index: 1;">
+        <h1 style="font-size: 3.5rem; margin-bottom: 1rem; line-height: 1.15; text-shadow: 0 4px 25px rgba(0,0,0,0.9);">Impressão 3D em<br><span class="text-gradient" style="font-weight: 800; filter: drop-shadow(0 4px 25px rgba(0,0,0,0.9));">Caruaru e Pernambuco</span></h1>
+        <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto 2.5rem; color: #fff; text-shadow: 0 4px 20px rgba(0,0,0,0.9);">
+          Especialistas em impressão 3D de alta qualidade em Caruaru-PE. Modelagem sob encomenda, prototipagem e miniaturas. Atendemos todo o Agreste Pernambucano e enviamos para todo o Brasil.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="/contato/" class="btn btn-primary" style="box-shadow: 0 0 25px rgba(255, 107, 0, 0.4);">Solicitar Orçamento</a>
+          <a href="https://wa.me/5581992321938?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="background: rgba(0,0,0,0.6); backdrop-filter: blur(8px); border-color: rgba(255,255,255,0.3);">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por que nós -->
+    <section class="section" style="background-color: var(--color-surface);">
+      <div class="container">
+        <div class="grid grid-2" style="align-items: center;">
+          <div>
+            <img src="/assets/resin_macro.png" alt="Detalhes microscópicos de impressão 3D em resina" style="width: 100%; height: 400px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: 1px solid var(--glass-border);">
+          </div>
+          <div>
+            <h2 style="margin-bottom: 1.5rem;">Por que a Ferreira <span class="text-gradient">3D</span> Studio?</h2>
+            <ul style="display: flex; flex-direction: column; gap: 1rem;">
+              <li style="display: flex; align-items: flex-start; gap: 1rem;">
+                <span style="color: var(--color-primary); flex-shrink: 0; padding-top: 2px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <div>
+                  <h4 style="margin-bottom: 0.25rem;">Qualidade Impecável</h4>
+                  <p style="margin: 0;">Equipamentos calibrados para o melhor acabamento superficial.</p>
+                </div>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 1rem;">
+                <span style="color: var(--color-primary); flex-shrink: 0; padding-top: 2px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <div>
+                  <h4 style="margin-bottom: 0.25rem;">Acabamento Premium</h4>
+                  <p style="margin: 0;">Opção de prime automotivo e pintura personalizada.</p>
+                </div>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: 1rem;">
+                <span style="color: var(--color-primary); flex-shrink: 0; padding-top: 2px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <div>
+                  <h4 style="margin-bottom: 0.25rem;">Atendimento Personalizado</h4>
+                  <p style="margin: 0;">Entendemos sua necessidade, seja você Pessoa Física ou Empresa.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: SERVIÇOS -->
+    <section id="servicos" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="text-gradient" style="font-size: 2.5rem;">Nossos Serviços</h2>
+          <p>Soluções completas do design ao produto final</p>
+        </div>
+
+        <!-- Serviço 1: Modelagem -->
+        <div class="service-section" id="servico-modelagem">
+          <div class="grid grid-2">
+            <div class="service-content">
+              <h3>Modelagem 3D Sob Encomenda</h3>
+              <p><strong>Para quem é:</strong> Pessoas ou empresas que têm uma ideia, mas não possuem o arquivo 3D para impressão.</p>
+              <p>Você traz a ideia, desenho ou esboço, e nossa equipe cria o modelo 3D digital pronto para ser impresso com perfeição.</p>
+              <div style="margin-top: 1rem;"><a href="/contato/?servico=modelagem" class="btn btn-outline">Solicitar Orçamento</a></div>
+            </div>
+            <div>
+            <img src="/assets/3d_modeling.png" alt="Interface de software de modelagem CAD 3D" style="width: 100%; height: 350px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: 1px solid var(--glass-border);">
+          </div>
+          </div>
+        </div>
+
+        <!-- Serviço 2: Impressão de Arquivo -->
+        <div class="service-section" id="servico-impressao">
+          <div class="grid grid-2">
+            <div style="order: -1;">
+            <img src="/assets/impressao_pronta.png?v=2" alt="Tela de computador mostrando um software de fatiamento (slicer) com arquivo STL pronto para impressão 3D" style="width: 100%; height: 350px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: 1px solid var(--glass-border);">
+          </div>
+            <div class="service-content">
+              <h3>Impressão de Arquivo Pronto</h3>
+              <p><strong>Para quem é:</strong> Clientes que já possuem o arquivo (formato STL ou OBJ) e precisam apenas do serviço de impressão.</p>
+              <p>Garantimos o melhor fatiamento para que a sua peça tenha resistência e o acabamento visual ideal.</p>
+              <div style="margin-top: 1rem;"><a href="/contato/?servico=impressao" class="btn btn-outline">Enviar meu arquivo</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Serviço 3: Protótipos Industriais -->
+        <div class="service-section" id="servico-prototipos">
+          <div class="grid grid-2">
+            <div class="service-content">
+              <h3>Protótipos Industriais</h3>
+              <p><strong>Para quem é:</strong> Engenheiros, arquitetos, designers de produto e indústrias.</p>
+              <p>Impressão de peças técnicas que exigem precisão dimensional e resistência mecânica/térmica para testes de encaixe, funcionalidade e ergonomia.</p>
+              <div style="margin-top: 1rem;"><a href="/empresas/" class="btn btn-outline">Área para Empresas</a></div>
+            </div>
+            <div>
+              <img src="/assets/prototipo_tecnico.png" alt="Protótipo técnico impresso em 3D em bancada de engenharia" style="width: 100%; height: 350px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: 1px solid var(--glass-border);">
+            </div>
+          </div>
+        </div>
+
+        <!-- Serviço 4: Miniaturas -->
+        <div class="service-section" id="servico-miniaturas">
+          <div class="grid grid-2">
+            <div>
+              <img src="/assets/miniatura_rpg.png" alt="Miniatura de guerreiro RPG altamente detalhada em resina" style="width: 100%; height: 350px; object-fit: cover; object-position: center top; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: 1px solid var(--glass-border);">
+            </div>
+            <div class="service-content">
+              <h3>Miniaturas e Colecionáveis</h3>
+              <p><strong>Para quem é:</strong> Colecionadores, jogadores de RPG, e entusiastas da cultura pop.</p>
+              <p>Impressão em altíssima resolução para capturar todos os detalhes de personagens, cenários e bustos.</p>
+              <div style="margin-top: 1rem;"><a href="/contato/?servico=miniatura" class="btn btn-outline">Fazer orçamento</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Serviço 5: Peças de Reposição -->
+        <div class="service-section">
+          <div class="grid grid-2">
+            <div class="service-content">
+              <h3>Peças de Reposição</h3>
+              <p><strong>Para quem é:</strong> Pessoas ou empresas com equipamentos/eletrodomésticos que possuem peças quebradas ou descontinuadas.</p>
+              <p>Nós recriamos a peça original através de engenharia reversa e a imprimimos em um material resistente.</p>
+              <div style="margin-top: 1rem;"><a href="/contato/?servico=reposicao" class="btn btn-outline">Recuperar minha peça</a></div>
+            </div>
+            <div>
+              <img src="/assets/peca_reposicao.png" alt="Peça de reposição impressa em 3D ao lado de um paquímetro" style="width: 100%; height: 300px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: 1px solid var(--glass-border);">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO: MATERIAIS -->
+    <section id="materiais" class="section" style="background-color: var(--color-surface);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="text-gradient" style="font-size: 2.5rem;">Materiais e Acabamentos</h2>
+          <p>Os melhores insumos para garantir o resultado perfeito.</p>
+        </div>
+        
+        <div class="grid grid-4" style="margin-bottom: 4rem;">
+          <div class="card">
+            <h3 class="text-gradient" style="font-size: 1.5rem; margin-bottom: 0.5rem;">PLA</h3>
+            <p style="font-size: 0.9rem;">O material mais popular. Ótimo custo-benefício, detalhes nítidos. Ideal para decoração e mockups.</p>
+          </div>
+          <div class="card">
+            <h3 class="text-gradient" style="font-size: 1.5rem; margin-bottom: 0.5rem;">PETG</h3>
+            <p style="font-size: 0.9rem;">A união da facilidade de impressão do PLA e a resistência do ABS. Ideal para peças mecânicas e uso externo.</p>
+          </div>
+          <div class="card">
+            <h3 class="text-gradient" style="font-size: 1.5rem; margin-bottom: 0.5rem;">ABS</h3>
+            <p style="font-size: 0.9rem;">Material técnico de alta resistência a impactos e temperaturas elevadas. Ideal para protótipos funcionais.</p>
+          </div>
+          <div class="card">
+            <h3 class="text-gradient" style="font-size: 1.5rem; margin-bottom: 0.5rem;">Resina</h3>
+            <p style="font-size: 0.9rem;">Impressão por cura de resina líquida para resolução micrométrica. Ideal para miniaturas de RPG e joalheria.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-2" style="align-items: center;">
+          <div>
+            <h3 style="margin-bottom: 1.5rem; font-size: 2rem;">Acabamento <span class="text-gradient">Premium</span></h3>
+            <p style="margin-bottom: 1rem;">Serviços adicionais de pós-processamento para máxima qualidade estética:</p>
+            <ul style="display: flex; flex-direction: column; gap: 0.75rem; color: var(--color-text-muted); margin-bottom: 2rem;">
+              <li>• Lixamento rigoroso para remoção de linhas de impressão</li>
+              <li>• Aplicação de Primer Automotivo</li>
+              <li>• Pintura personalizada (aerógrafo e pincel para detalhes)</li>
+              <li>• Verniz protetor (Fosco, Acetinado ou Brilhante)</li>
+            </ul>
+            <a href="/contato/" class="btn btn-primary">Orçar Peça com Acabamento</a>
+          </div>
+          <div>
+            <img src="/assets/processo_pintura.png" alt="Processo de aplicação de primer e pintura em peça 3D com aerógrafo" style="width: 100%; height: 300px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); border: 1px solid var(--glass-border);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: FAQ -->
+    <section id="faq" class="section" style="background-color: var(--color-surface);">
+      <div class="container" style="max-width: 800px;">
+        <div class="section-header">
+          <h2 class="text-gradient" style="font-size: 2.5rem;">Dúvidas Frequentes</h2>
+        </div>
+        
+        <div class="accordion-item">
+          <button class="accordion-header">Fazem impressão 3D em Caruaru?</button>
+          <div class="accordion-content">
+            <p>Sim! A Ferreira 3D Studio é especializada em impressão 3D em Caruaru-PE. Atendemos clientes de toda a cidade e região do Agreste Pernambucano, incluindo Bezerros, Gravatá, Belo Jardim, Toritama, Santa Cruz do Capibaribe e muito mais.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Vocês atendem outras cidades de Pernambuco?</button>
+          <div class="accordion-content">
+            <p>Sim! Além de Caruaru, atendemos todo o Agreste Pernambucano e também Recife, Olinda e região metropolitana. Fazemos envio via Correios ou transportadora para qualquer cidade de Pernambuco e de todo o Brasil.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Como funciona o processo de orçamento?</button>
+          <div class="accordion-content">
+            <p>Nosso orçamento é feito de forma rápida e personalizada pelo WhatsApp. Basta enviar a ideia, foto ou arquivo 3D e analisamos o material, tempo de impressão e passamos o valor e prazo em seguida.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Preciso ter o arquivo 3D pronto?</button>
+          <div class="accordion-content">
+            <p>Não é obrigatório! Oferecemos o serviço de Modelagem 3D. Você pode trazer apenas a ideia, fotos ou a peça original e nossa equipe criará o arquivo digital pronto para impressão.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Qual o prazo médio de entrega?</button>
+          <div class="accordion-content">
+            <p>O prazo varia de acordo com o tamanho da peça, complexidade e acabamento. Peças simples podem ficar prontas em 2 a 3 dias úteis. Projetos maiores ou com acabamento em pintura podem levar de 7 a 15 dias úteis.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Fazem entrega para todo o Brasil?</button>
+          <div class="accordion-content">
+            <p>Sim! Enviamos para todo o território nacional via Correios ou transportadora. Atendemos clientes em Caruaru, em todo o Pernambuco e em qualquer estado do Brasil.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- B2B Call to action -->
+    <section class="section" style="background: linear-gradient(to right, var(--color-primary), var(--color-primary-hover)); color: #fff;">
+      <div class="container text-center">
+        <h2 style="color: #fff; margin-bottom: 1rem;">Procurando Soluções B2B?</h2>
+        <p style="color: #fff; max-width: 600px; margin: 0 auto 2rem; opacity: 0.9;">
+          Atendemos empresas com necessidades de prototipagem, pequenos lotes e peças técnicas com emissão de nota fiscal e prazos acordados.
+        </p>
+        <a href="/empresas/" class="btn" style="background-color: #fff; color: var(--color-primary);">Área para Empresas</a>
+      </div>
+    </section>
+
+  </main>
+
+  <app-footer></app-footer>
+  <floating-whatsapp></floating-whatsapp>
+
+  <script>
+    // Gallery filter logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const filters = document.querySelectorAll('.filter-btn');
+      const items = document.querySelectorAll('.gallery-item');
+
+      filters.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filters.forEach(f => f.classList.remove('active'));
+          btn.classList.add('active');
+          const filterValue = btn.getAttribute('data-filter');
+          items.forEach(item => {
+            if(filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

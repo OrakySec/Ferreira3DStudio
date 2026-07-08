@@ -1,0 +1,52 @@
+/* css/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;500;700;800&display=swap');
+
+body {
+  font-family: var(--font-family-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(255, 85, 0, 0.03), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(255, 85, 0, 0.04), transparent 25%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  line-height: 1.1;
+  margin-bottom: var(--space-sm);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: clamp(2rem, 8vw, 4.5rem); font-weight: 800; line-height: 1.1; word-wrap: break-word; hyphens: auto; }
+h2 { font-size: clamp(1.75rem, 6vw, 3rem); word-wrap: break-word; }
+h3 { font-size: clamp(1.25rem, 4vw, 1.75rem); word-wrap: break-word; }
+
+p {
+  margin-bottom: var(--space-sm);
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Text Utilities */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+.text-center { text-align: center; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;
+}
