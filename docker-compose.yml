@@ -2,8 +2,7 @@ version: '3.8'
 
 services:
   app:
-    image: ghcr.io/${GITHUB_REPOSITORY}:latest
-    container_name: ferreira3d_site
+    image: ghcr.io/orakysec/ferreira3dstudio:latest
     networks:
       - YkaroNET
     deploy:
