@@ -14,10 +14,17 @@ services:
       labels:
         - "traefik.enable=true"
         - "traefik.docker.network=YkaroNET"
-        - "traefik.http.routers.ferreira3d.rule=Host(`ferreira3d.com`, `www.ferreira3d.com`)"
-        - "traefik.http.routers.ferreira3d.entrypoints=websecure"
-        - "traefik.http.routers.ferreira3d.tls.certresolver=letsencryptresolver"
-        - "traefik.http.services.ferreira3d.loadbalancer.server.port=80"
+        # Redirecionamento HTTP -> HTTPS
+        - "traefik.http.routers.f3d-http.rule=Host(`ferreira3d.com`, `www.ferreira3d.com`)"
+        - "traefik.http.routers.f3d-http.entrypoints=web"
+        - "traefik.http.routers.f3d-http.middlewares=f3d-https"
+        - "traefik.http.middlewares.f3d-https.redirectscheme.scheme=https"
+        - "traefik.http.middlewares.f3d-https.redirectscheme.permanent=true"
+        # Rota HTTPS segura
+        - "traefik.http.routers.f3d-https.rule=Host(`ferreira3d.com`, `www.ferreira3d.com`)"
+        - "traefik.http.routers.f3d-https.entrypoints=websecure"
+        - "traefik.http.routers.f3d-https.tls.certresolver=letsencryptresolver"
+        - "traefik.http.services.f3d-https.loadbalancer.server.port=80"
 
 networks:
   YkaroNET:
