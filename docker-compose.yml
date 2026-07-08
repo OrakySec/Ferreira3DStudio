@@ -5,6 +5,7 @@ services:
     image: ghcr.io/orakysec/ferreira3dstudio:latest
     networks:
       - YkaroNET
+      - default
     deploy:
       replicas: 1
       restart_policy:
@@ -22,3 +23,5 @@ services:
 networks:
   YkaroNET:
     external: true
+  default:
+    driver: overlay
