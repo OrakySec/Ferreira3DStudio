@@ -15,7 +15,7 @@ services:
       labels:
         - "traefik.enable=true"
         - "traefik.docker.network=YkaroNET"
-        - "traefik.http.routers.ferreira3d.rule=Host(`ferreira3d.com`, `www.ferreira3d.com`)"
+        - "traefik.http.routers.ferreira3d.rule=Host(`ferreira3d.com`) || Host(`www.ferreira3d.com`)"
         - "traefik.http.routers.ferreira3d.entrypoints=websecure"
         - "traefik.http.routers.ferreira3d.tls.certresolver=letsencryptresolver"
         - "traefik.http.services.ferreira3d.loadbalancer.server.port=80"
