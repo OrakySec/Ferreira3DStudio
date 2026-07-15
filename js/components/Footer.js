@@ -41,7 +41,7 @@ class AppFooter extends HTMLElement {
             <div>
               <h4 style="margin-bottom: 1rem;">Contato</h4>
               <ul style="display: flex; flex-direction: column; gap: 0.5rem;">
-                <li><a href="https://wa.me/5581992321938" target="_blank" rel="noopener noreferrer" style="color: var(--color-text-muted);" onclick="gtag('event', 'conversion', {'send_to': 'AW-18221522730/IjifCPiVl9EcEKq-2fBD'});">WhatsApp: (81) 99232-1938</a></li>
+                <li><a href="https://wa.me/5581992321938" style="color: var(--color-text-muted);" onclick="return gtag_report_conversion('https://wa.me/5581992321938');">WhatsApp: (81) 99232-1938</a></li>
                 <li><a href="mailto:ferreirastudio3d@gmail.com" style="color: var(--color-text-muted);">Email: ferreirastudio3d@gmail.com</a></li>
                 <li style="color: var(--color-text-muted);">Endereço: Rua Santa Luzia 307 AP 301 Caruaru-PE</li>
               </ul>

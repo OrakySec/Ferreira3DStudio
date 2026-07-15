@@ -9,6 +9,19 @@
     gtag('js', new Date());
 
     gtag('config', 'AW-18221522730');
+
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.open(url, '_blank');
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18221522730/IjifCPiVl9EcEKq-2fBD',
+          'event_callback': callback
+      });
+      return false;
+    }
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -394,7 +407,6 @@
       ].filter(Boolean).join('\n');
 
       const url = 'https://wa.me/5581992321938?text=' + encodeURIComponent(msg);
-      gtag('event', 'conversion', {'send_to': 'AW-18221522730/IjifCPiVl9EcEKq-2fBD'});
-      window.open(url, '_blank');
+      gtag_report_conversion(url);
     });
   </script>
