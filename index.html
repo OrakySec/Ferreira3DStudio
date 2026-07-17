@@ -11,15 +11,16 @@
     gtag('config', 'AW-18221522730');
 
     function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.open(url, '_blank');
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-18221522730/IjifCPiVl9EcEKq-2fBD',
-          'event_callback': callback
-      });
+      // Dispara a conversão para o Google Ads
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18221522730/IjifCPiVl9EcEKq-2fBD'
+        });
+      }
+      // Abre o WhatsApp em nova aba independente do gtag ter carregado
+      if (url) {
+        window.open(url, '_blank');
+      }
       return false;
     }
   </script>
