@@ -20,10 +20,9 @@ class AppHeader extends HTMLElement {
       <header class="site-header">
         <div class="container header-container">
           <div class="logo">
-            <a href="${root}" style="display: inline-flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-              <img src="/assets/logo_symbol.svg" alt="Ferreira 3D Icon" style="height: 42px; width: 42px; filter: drop-shadow(0 0 10px rgba(255, 85, 0, 0.45));">
-              <span style="font-family: 'Orbitron', 'Exo 2', sans-serif; font-size: 1.6rem; font-weight: 800; color: #ffffff; letter-spacing: 0.02em;">
-                Ferreira <span style="color: var(--color-primary); font-weight: 900; text-shadow: 0 0 15px rgba(255, 85, 0, 0.7);">3D</span>
+            <a href="${root}" style="display: inline-flex; align-items: center; text-decoration: none;">
+              <span style="font-family: 'Orbitron', 'Exo 2', sans-serif; font-size: 1.5rem; font-weight: 800; color: #ffffff; letter-spacing: 0.02em;">
+                Ferreira <span style="color: var(--color-primary); font-weight: 900; text-shadow: 0 0 15px rgba(255, 85, 0, 0.7);">3D</span> Studio
               </span>
             </a>
           </div>

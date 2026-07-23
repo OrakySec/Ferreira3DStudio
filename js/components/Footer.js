@@ -7,9 +7,8 @@ class AppFooter extends HTMLElement {
         <div class="container">
           <div class="grid grid-4">
             <div>
-              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                <img src="/assets/logo_symbol.svg" alt="Ferreira 3D Icon" style="height: 36px; width: 36px;">
-                <h3 style="margin: 0; font-family: 'Orbitron', 'Exo 2', sans-serif; font-size: 1.5rem; font-weight: 800; color: #fff;">Ferreira <span class="text-primary" style="font-weight: 900;">3D</span></h3>
+              <div style="margin-bottom: 1rem;">
+                <h3 style="margin: 0; font-family: 'Orbitron', 'Exo 2', sans-serif; font-size: 1.5rem; font-weight: 800; color: #fff;">Ferreira <span class="text-primary" style="font-weight: 900;">3D</span> Studio</h3>
               </div>
               <p style="margin-bottom: 1.5rem;">Impressão 3D de alta qualidade, modelagem sob encomenda e prototipagem em Caruaru-PE.</p>
               <!-- Redes Sociais -->
