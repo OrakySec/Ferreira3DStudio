@@ -237,6 +237,15 @@
   gap: 1.25rem;
 }
 
+/* Linha de badges (localização + entrega) */
+.hero-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* Badge de localização */
 .hero-badge {
   display: inline-flex;
@@ -245,13 +254,20 @@
   background: rgba(255, 85, 0, 0.15);
   border: 1px solid rgba(255, 85, 0, 0.35);
   color: #ff8844;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 0.35rem 0.9rem;
   border-radius: var(--radius-pill);
   backdrop-filter: blur(8px);
+}
+
+/* Badge de entrega — mais discreto */
+.hero-badge--muted {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* Título principal */
@@ -269,21 +285,12 @@
 
 /* Subtítulo */
 .hero-subtitle {
-  font-size: clamp(0.95rem, 2.5vw, 1.2rem);
-  color: rgba(255, 255, 255, 0.85);
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+  color: rgba(255, 255, 255, 0.82);
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
-  max-width: 600px;
+  max-width: 580px;
   line-height: 1.7;
   margin: 0;
-}
-
-/* Linha de envio nacional */
-.hero-shipping {
-  display: inline-block;
-  margin-top: 0.4rem;
-  font-size: 0.9em;
-  color: rgba(255, 255, 255, 0.6);
-  letter-spacing: 0.02em;
 }
 
 /* Botões do hero */
@@ -292,7 +299,7 @@
   gap: 1rem;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
 }
 
 .hero-btn-primary {
@@ -301,7 +308,7 @@
 }
 
 .hero-btn-outline {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(10px);
   border-color: rgba(255, 255, 255, 0.25);
   color: #ffffff;
@@ -310,6 +317,49 @@
 .hero-btn-outline:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Trust bar — prova social */
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 0.75rem;
+  padding: 0.9rem 1.75rem;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: var(--radius-lg);
+}
+
+.hero-trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.hero-trust-item strong {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #ffffff;
+  font-family: var(--font-family-heading);
+  line-height: 1;
+}
+
+.hero-trust-item span {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.hero-trust-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
 }
 
 /* Mobile */
@@ -324,7 +374,7 @@
   }
 
   .hero-subtitle {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
   }
 
   .hero-actions {
@@ -338,6 +388,29 @@
   .hero-btn-outline {
     width: 100%;
     max-width: 320px;
+    justify-content: center;
+  }
+
+  .hero-trust {
+    gap: 1rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .hero-trust-item strong {
+    font-size: 0.88rem;
+  }
+
+  /* Badge de entrega menor no mobile */
+  .hero-badge--muted {
+    font-size: 0.66rem;
+    padding: 0.25rem 0.7rem;
+    letter-spacing: 0.03em;
+  }
+
+  /* \u00cdcone WhatsApp maior no bot\u00e3o principal (mobile) */
+  .hero-btn-primary svg {
+    width: 26px;
+    height: 26px;
   }
 }
 
