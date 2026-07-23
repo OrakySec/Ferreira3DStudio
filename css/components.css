@@ -392,12 +392,36 @@
   }
 
   .hero-trust {
-    gap: 1rem;
-    padding: 0.75rem 1.25rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem 0.5rem;
+    gap: 0.25rem;
+    justify-content: space-between;
+  }
+
+  .hero-trust-item {
+    flex: 1 1 0px;
+    min-width: 0;
+    text-align: center;
   }
 
   .hero-trust-item strong {
-    font-size: 0.88rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .hero-trust-item span {
+    font-size: 0.6rem;
+    letter-spacing: 0.01em;
+    white-space: normal;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .hero-trust-divider {
+    height: 22px;
+    opacity: 0.6;
   }
 
   /* Badge de entrega menor no mobile */
@@ -407,7 +431,7 @@
     letter-spacing: 0.03em;
   }
 
-  /* \u00cdcone WhatsApp maior no bot\u00e3o principal (mobile) */
+  /* Ícone WhatsApp maior no botão principal (mobile) */
   .hero-btn-primary svg {
     width: 26px;
     height: 26px;
